@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <title>ABC General Store</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    </head>
+    <body class="container-fluid"  onload="LoadItems()">
+        <h1 style="text-align: center;background-color: aqua; padding: 5px;">Welcome to General Store</h1>
+        <div class="row justify-content-center">
+            <form class="col-10 input-group m-2 mt-5 ">
+                <label for="items" class="mt-2 ms-2"><b>Item Name</b></label>
+                <input name="items" id="item" class="form-control  m-2" placeholder="Item name" >
+    
+                <label for="desc" class="mt-2 ms-2"><b>Description</b></label>
+                <input type="text" name="desc" id="desc" class="form-control  m-2" placeholder="Item-Description">
+    
+                <label for="price" class="mt-2 ms-2"><b>Price</b></label>
+                <input type="text" name="price" id="price" class="form-control  m-2" placeholder="Item-Price">
+
+                <label for="qty" class="mt-2 ms-2"><b>Quatity</b></label>
+                <input type="text" name="qty" id="qty" class="form-control  m-2" placeholder="Quantity">
+               
+            </form>
+            <button class="btn btn-primary w-25 align-self-center" onclick="AddItems(event)" >Add Item</button>
+              
+    
+        </div>    
+        <table id="msg" class="w-100 h-100 table table-active table-hover">
+        </table>
+        <script src="main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    </body>
+
+</htm>
